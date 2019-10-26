@@ -1,0 +1,6 @@
+matplotlib
+scipy
+numpy
+beautifulsoup4
+pandas
+wget
