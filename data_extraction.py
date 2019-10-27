@@ -7,6 +7,8 @@ import ftplib
 from datetime import date, timedelta
 import pandas as pd
 
+# textbook url 'http://www.pythonscraping.com/pages/page1.html'
+
 
 def scraping_links_from_urls(url):
     try:
@@ -27,15 +29,7 @@ def scraping_links_from_urls(url):
     return links
 
 
-
 def get_and_unzip(url_of_file, destination_path, zipped_file_path):
     wget.download(url_of_file, destination_path)
     ZipFile(zipped_file_path, 'r').extractall(destination_path)
     return
-
-
-
-
-# textbook url 'http://www.pythonscraping.com/pages/page1.html'
-# ftp://ftp.cmegroup.com/pub/settle/Expiring_Options_UnderlyingProduct_SettlementReport.csv
-# ftp://ftp.cmegroup.com/pub/settle/cbt.settle.20190906.s.txt
