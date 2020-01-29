@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import itertools as it
 
-from covel import covel_directory_driver, prep_covel
+from dir_prep import directory_driver, prep_covel
 
 
 def get_market_data(market_symbol, endswith_field='.txt'):
