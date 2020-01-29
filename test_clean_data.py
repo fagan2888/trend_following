@@ -1,4 +1,4 @@
-from strategy import *
+from clean_data import *
 import matplotlib.pyplot as plt
 
 
